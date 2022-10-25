@@ -24,6 +24,10 @@ const UserSchema: Schema = new Schema({
     type: String,
     required: true,
   },
+  role: {
+    type: String,
+    required: true,
+  },
 })
 
 export default mongoose.model<IUser>("User", UserSchema)
